@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <!--título de la página.-->
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../estilos/estilo.css">
+</head>
+
+<!-- 
+    
+    DAW 
+    UD2. LMSGI02 Tarea evaluativa 2. Sitio Web.
+    Autor: Walter Banchero Palomino.
+    Fecha: 1/12/2023
+
+-->
+
+<body>
+
+
+    <!--zona de visualización para las cabeceras.-->
+    <header>
+        <h1>INFO-PEL&iacute;CULAS</h1>
+    </header>
+    <!-- Contenedor principal de la página-->
+    <div id="contenedor">
+        <!--zona de visualización para la navegación con vínculos hipertexto, con temática relacionada-->
+        <nav>
+            <!--creación de un listado con links a referencias internas-->
+            <h4>Secciones</h4>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="novedades.html">Novedades</a></li>
+                <li><a href="resenas.html">Rese&ntilde;as</a></li>
+            </ul>
+        </nav>
+        <!--permite mostrar un contenido central.-->
+        <main>
+            <h5 class="h5-resena-comp">Contacto</h5>
+            <section class="posicion-formulario">
+                <article>
+                    <!-- formulario de contacto-->
+                    <fieldset>
+                        <legend align="center">Formulario de contacto</legend>
+                        <form action="mailto:wabanchero@birt.eus" method="POST">
+
+                            <label for="nombre">Nombre</label>
+                            <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" />
+
+                            <label for="apellidos">Apellidos</label>
+                            <input type="text" name="apellidos" id="apellidos" placeholder="1r Apellido" />
+
+                            <label for="email" />Email</label>
+                            <input type="email" name="email" id="email" placeholder="email" required />
+
+                            <label for="asunto">Asunto</label>
+                            <input type="text" name="asunto" id="asunto" placeholder="titular de la consulta" />
+
+                            <label for="mensaje">Mensaje</label>
+                            <textarea name="mensaje" for="mensaje"
+                                placeholder="describe brevemente en menos de 300 carácteres" maxlength="300"></textarea>
+
+                            <input type="submit" name="enviar" value="enviar datos" />
+                        </form>
+                    </fieldset>
+                </article>
+
+                <article class="posicion-article-f">
+                    <h5 class="h5-formulario">Contacta con nosotros!</h5>
+                    <p>
+                        Para ello, puedes rellenar el formulario
+                    </p>
+                    <img class="posicion-imagen" src="../imagenes/iconos/icon-mensaje.jpg" alt="Icon html5">
+                    <p>Siguenos en redes</p>
+                    <div>
+                        <a class="link-icono" href="https://www.facebook.com/" title="Facebook">
+                            <img src="../imagenes/iconos/facebook.png" alt="Icon html5">
+                        </a>
+                        <a class="link-icono" href="https://www.instagram.com/" title="Instagram">
+                            <img src="../imagenes/iconos/instagram.png" alt="Icon html5">
+                        </a>
+                        <a class="link-icono" href="https://www.youtube.com/" title="Youtube">
+                            <img src="../imagenes/iconos/youtube.png" alt="Icon html5">
+                        </a>
+                    </div>
+                </article>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <!-- zona de visualización para los pies de página.-->
+        <p>&copy; 2023 Info-Pel&iacute;culas. Todos los derechos de las im&aacute;genes est&aacute;n reservados y pertenecen a sus autores.</p>
+    </footer>
+</body>
+
+</html>
